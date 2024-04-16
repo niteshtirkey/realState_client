@@ -1,0 +1,42 @@
+.h-wrapper{
+    color: #fff;
+    z-index: 99;
+    /* position: sticky; */
+    /* top: 0; */
+}
+.h-container{
+    justify-content: space-between !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    color: var(--secondary);
+}
+.h-menu{
+    gap: 2rem;
+}
+.h-menu>*:hover{
+    cursor: pointer;
+}
+
+.menu-icon{
+    display: none;
+}
+@media(max-width:768px){
+    .menu-icon{
+        display:block;
+    }
+    .h-menu{
+        z-index: 99;
+        color: var(--black);
+        background: #fff;
+        position: absolute;
+        flex-direction: column;
+        right: 4rem;
+        top: 3rem;
+        display: flex;
+        border-radius: 10px;
+        transition: all 200ms ease;
+        align-items: center;
+        padding: 3rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+}
